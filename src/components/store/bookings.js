@@ -61,17 +61,6 @@ export const createBooking = (payload) => async (dispatch, getState) => {
     dispatch(bookingsRequestFailed(error.message));
   }
 };
-// export const checkRoomForBooking=(roomId, dateIn,dateOut)=>{
-//   const roomBookings=getBookings()
-//   // const roomBookings=loadBookingsListForRoom(roomId)
-//   console.log('roomBookings ', roomBookings)
-//   return roomBookings?.every(
-//             (booking) =>
-//             Date.parse(booking.checkin) >= Date.parse(dateOut) ||
-//             Date.parse(booking.checkout) <= Date.parse(dateIn)
-//           )
-// }
-
 export const removeBooking = (bookingId) => async (dispatch) => {
   dispatch(removeBookingRequested());
   try {
