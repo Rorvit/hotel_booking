@@ -1,0 +1,70 @@
+body {
+  background: #F4F4F4;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.heading {
+  background: rgba(255, 255, 255, 0.6);
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  margin: 30px, auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.booking-dates {
+  text-align: center;
+}
+
+.calendar-container {
+  justify-content: center;
+}
+.room-img {
+  height: 90px;
+}
+.slider {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.image-blurred-edge{
+
+}
+.slider-img {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  transition-duration: 3s;
+  transition: all 1.7s;
+}
+
+.slider-img-prev {
+  transform: translateX(-100%);
+}
+
+.slider-img-next {
+  transform: translateX(100%);
+}
