@@ -53,12 +53,6 @@ export const loadBookingsListForRoom = (roomId) => async (dispatch) => {
 
 export const createBooking = (payload) => async (dispatch, getState) => {
   dispatch(addBookingRequested());
-  // const booking = {
-  //   ...payload, //даты
-  //   _id: nanoid(),
-  //   created_at: Date.now(),
-  //   // userId: getCurrentUserId()(getState()),
-  // };
 
   try {
     const { content } = await bookingService.createBooking(payload);

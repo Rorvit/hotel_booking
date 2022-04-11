@@ -17,7 +17,6 @@ function App() {
     <>
       <AppLoader>
         <NavBar />
-
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/login/:type?" component={Login} />
